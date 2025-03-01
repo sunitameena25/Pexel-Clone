@@ -1,0 +1,78 @@
+/* 🔹 Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🔹 Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* 🔹 Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('images/p5.jpg') center/cover no-repeat;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* 🔹 Image Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 30px;
+}
+
+.gallery img {
+    width: 100%;       /* Image ko container ke width ke according fit karega */
+    height: 250px;     /* Fixed height set karein */
+    object-fit: cover; /* Image ko crop karne ke liye jisse wo properly fit ho */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f8f8f8;
+    font-size: 14px;
+}
